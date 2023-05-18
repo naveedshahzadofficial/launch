@@ -1,0 +1,99 @@
+﻿* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.wrap{  
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  z-index:9999;
+  left:125px;
+  top:20px;
+  
+}
+
+#clickerwrap
+{
+    width:230px;
+}
+
+#clickericon
+{
+    background-image: url(../img/wifi-icon.png);
+    width: 59px;
+    height: 56px;
+    display: inline-block;
+}
+
+.clicker{
+  /*background-color: #00A650;
+ border-radius: 100px;
+
+  */
+  background-image: url(../img/wifi-icon.png);
+                                
+  color: #FFF;
+  outline: none;  
+  font-weight: 600;
+	  /*position:absolute;*/
+  cursor: pointer;
+  padding: 0;
+	  border: none;
+	  height: 56px;
+	  width: 171px;
+  left: 8px;
+  top: 8px;
+	 
+	  z-index: 2;
+      padding-top:20px;
+      display:inline-block;
+}
+
+.clicker:active{
+	  transform: translate(0, 1px);
+  height: 63px;
+	  box-shadow: 0px 1px 0 0 rgb(190,190,190) inset;
+}
+
+.circle{
+	  position: relative;
+  border-radius:40px;
+	  width: 80px;
+	  height: 80px;
+	  z-index: 1;
+}
+
+.circle.third{
+  border-radius: 0;
+}
+
+/*.clicker.faster:hover + .circle, .clicker.faster:active + .circle {
+	  animation: rotator linear .4s infinite;
+}
+
+.clicker.fast:hover + .circle, .clicker.fast:active + .circle {
+	  animation: rotator linear .5s infinite;
+}*/
+
+.clicker:hover + .circle, .clicker:active + .circle {
+	  animation: rotator linear .8s infinite;
+}
+
+@keyframes rotator{
+	  from{ transform: rotate(0deg); }
+	  to{ transform: rotate(360deg); }
+}
+
+		
+.angled {
+			background-image: linear-gradient(0deg, 
+                white 0%,
+                white 30%,
+                rgb(197, 0, 7) 30%,
+								rgb(197, 0, 7) 70%, 
+                white 70%, 
+                white 100%);
+		}
+

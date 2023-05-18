@@ -1,0 +1,142 @@
+.right-plans{
+    position: relative;
+}
+
+.right-plans .right-plan{
+    animation: MoveUpDown 6s linear infinite;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 100px;
+    }
+}
+
+.top-plans .top-plan{
+   animation: MoveUpRight 6s linear infinite;
+    position: absolute;
+    top: 20%;
+    left: 32%;
+}
+
+.launch-btn{
+
+}
+
+@keyframes MoveUpRight {
+
+    0%,
+    100% {
+        left: 32%;
+    }
+
+    50% {
+        left: 40%;
+    }
+}
+
+.launch_of{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.circle-btn img{
+    height: 100px;
+    position: absolute;
+    top: -17px;
+    left: -19px;
+}
+
+.circle-btn{
+
+}
+
+
+
+.cm-img-overlay {
+    position: absolute;
+    top: -9px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 12%;
+    -webkit-animation: rotation 20s linear infinite;
+    animation: rotation 20s linear infinite;
+}
+
+.cm-image-wrap {
+    position: relative;
+}
+
+.cm-img-overlay img {
+    width: 100%;
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.ribbondiv {
+    height: 160px;
+}
+
+body{
+    overflow: hidden;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.curtaindiv img {
+    height: 100%;
+}
+
+.main-logo-click{
+    animation: ver-rotate 1s linear;
+}
+
+
+@keyframes ver-rotate
+{
+from
+{
+transform: rotateX(0deg);
+}
+to
+{
+transform: rotateX(360deg);
+}
+}
+
+
+#header{
+    margin-bottom: 35px;
+}
